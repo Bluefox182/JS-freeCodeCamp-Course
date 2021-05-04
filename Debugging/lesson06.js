@@ -9,16 +9,17 @@ that's in quotes. Just be careful that you don't close the string too early, whi
 causes a syntax error.
 
 Here are some examples of mixing quotes: */
-const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
-const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
-const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
+// const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";
+// const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";
+// const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';
 // The first two are correct, but the third is incorrect.
 
 /* Of course, it is okay to use only one style of quotes. You can escape the quotes 
 inside the string by using the backslash (\) escape character: */
-const allSameQuotes = 'I\'ve had a perfectly wonderful evening, but this wasn\'t it.';
+const allSameQuotes =
+  "I've had a perfectly wonderful evening, but this wasn't it.";
 
 /* Fix the string so it either uses different quotes for the href value, or escape the 
 existing ones. Keep the double quote marks around the entire string. */
-let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
+let innerHtml = '<p>Click here to <a href="#Home">return home</a></p>';
 console.log(innerHtml);
